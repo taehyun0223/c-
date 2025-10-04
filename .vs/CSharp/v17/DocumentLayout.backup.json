@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\csharp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
@@ -52,7 +56,20 @@
               "RelativeDocumentMoniker": "CSharp\\TextRPG.cs",
               "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG.cs",
               "RelativeToolTip": "CSharp\\TextRPG.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAuwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:59:52.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Debug.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Debug.cs",
+              "RelativeDocumentMoniker": "CSharp\\Debug.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Debug.cs",
+              "RelativeToolTip": "CSharp\\Debug.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T11:20:39.993Z",
               "EditorCaption": ""
@@ -60,19 +77,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CSharp",
+              "Title": "CSharp.csproj",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\CSharp.csproj",
               "RelativeDocumentMoniker": "CSharp\\CSharp.csproj",
               "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\CSharp.csproj",
               "RelativeToolTip": "CSharp\\CSharp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-03T17:20:23.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CSharp",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\CSharp.csproj",
               "RelativeDocumentMoniker": "CSharp\\CSharp.csproj",
@@ -84,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Iteration.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Iteration.cs",
               "RelativeDocumentMoniker": "CSharp\\Iteration.cs",
@@ -92,12 +109,11 @@
               "RelativeToolTip": "CSharp\\Iteration.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAqwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T17:20:34.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T17:20:34.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Flow.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Flow.cs",
               "RelativeDocumentMoniker": "CSharp\\Flow.cs",
@@ -105,12 +121,11 @@
               "RelativeToolTip": "CSharp\\Flow.cs",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T15:58:08.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T15:58:08.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Program.cs",
               "RelativeDocumentMoniker": "CSharp\\Program.cs",
@@ -118,8 +133,7 @@
               "RelativeToolTip": "CSharp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:36:09.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T10:36:09.144Z"
             }
           ]
         }
