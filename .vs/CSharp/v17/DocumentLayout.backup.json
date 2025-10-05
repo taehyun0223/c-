@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\gameprogramming\\CSharp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\datastructure\\array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\datastructure\\array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\textrpg2\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\textrpg2\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +55,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CSharp",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\CSharp.csproj",
+              "RelativeDocumentMoniker": "CSharp\\CSharp.csproj",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\CSharp.csproj",
+              "RelativeToolTip": "CSharp\\CSharp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-05T18:24:55.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Array.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\Array.cs",
+              "RelativeDocumentMoniker": "CSharp\\DataStructure\\Array.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\Array.cs",
+              "RelativeToolTip": "CSharp\\DataStructure\\Array.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvyYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T18:23:12.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TextRPG.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG.cs",
@@ -54,25 +88,24 @@
               "RelativeToolTip": "CSharp\\TextRPG.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAtwJgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T17:46:47.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T17:46:47.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Game.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Game.cs",
               "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Game.cs",
               "RelativeToolTip": "CSharp\\TextRPG2\\Game.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAgwEoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-05T17:44:42.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Creature.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Creature.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Creature.cs",
@@ -80,12 +113,11 @@
               "RelativeToolTip": "CSharp\\TextRPG2\\Creature.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T16:06:08.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T16:06:08.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Entry.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Entry.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Entry.cs",
@@ -93,12 +125,11 @@
               "RelativeToolTip": "CSharp\\TextRPG2\\Entry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T15:53:37.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T15:53:37.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Monster.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Monster.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Monster.cs",
@@ -106,12 +137,11 @@
               "RelativeToolTip": "CSharp\\TextRPG2\\Monster.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowDIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T15:53:21.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T15:53:21.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Player.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Player.cs",
@@ -119,8 +149,7 @@
               "RelativeToolTip": "CSharp\\TextRPG2\\Player.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAmwDMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T15:53:10.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T15:53:10.504Z"
             }
           ]
         }
