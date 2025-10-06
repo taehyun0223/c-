@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp.DataStructure.Array</StartupObject>
+    <StartupObject>CSharp.DataStructure.Dict</StartupObject>
   </PropertyGroup>
 
 </Project>
