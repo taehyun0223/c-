@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\gameprogramming\\CSharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\datastructure\\array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\datastructure\\array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\reflect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\reflect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\exceptionhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\exceptionhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\lambda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\lambda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\delegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\delegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\etc\\generic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\etc\\generic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\datastructure\\dict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\datastructure\\dict.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\datastructure\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\datastructure\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\datastructure\\array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|solutionrelative:csharp\\datastructure\\array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13CCD8AE-45C4-4252-8E8A-8DF5627160E5}|CSharp\\CSharp.csproj|c:\\gameprogramming\\csharp\\csharp\\textrpg2\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,32 +98,173 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Reflect.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Reflect.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\Reflect.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Reflect.cs",
+              "RelativeToolTip": "CSharp\\Etc\\Reflect.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAApwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T18:56:37.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExceptionHandling.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\ExceptionHandling.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\ExceptionHandling.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\ExceptionHandling.cs",
+              "RelativeToolTip": "CSharp\\Etc\\ExceptionHandling.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T18:45:59.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lambda.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Lambda.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\Lambda.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Lambda.cs",
+              "RelativeToolTip": "CSharp\\Etc\\Lambda.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:59:55.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Program.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\Program.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Program.cs",
+              "RelativeToolTip": "CSharp\\Etc\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:09:12.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\InputManager.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\InputManager.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\InputManager.cs",
+              "RelativeToolTip": "CSharp\\Etc\\InputManager.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:04:31.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delegate.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Delegate.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\Delegate.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Delegate.cs",
+              "RelativeToolTip": "CSharp\\Etc\\Delegate.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwCIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T13:51:35.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Property.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Property.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\Property.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Property.cs",
+              "RelativeToolTip": "CSharp\\Etc\\Property.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T13:27:25.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Interface.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Interface.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\Interface.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Interface.cs",
+              "RelativeToolTip": "CSharp\\Etc\\Interface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T13:14:12.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Generic.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Generic.cs",
+              "RelativeDocumentMoniker": "CSharp\\Etc\\Generic.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\Etc\\Generic.cs",
+              "RelativeToolTip": "CSharp\\Etc\\Generic.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwDcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T11:55:55.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dict.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\Dict.cs",
+              "RelativeDocumentMoniker": "CSharp\\DataStructure\\Dict.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\Dict.cs",
+              "RelativeToolTip": "CSharp\\DataStructure\\Dict.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T10:07:18.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "List.cs",
+              "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\List.cs",
+              "RelativeDocumentMoniker": "CSharp\\DataStructure\\List.cs",
+              "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\List.cs",
+              "RelativeToolTip": "CSharp\\DataStructure\\List.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T09:55:15.262Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "CSharp.csproj",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\CSharp.csproj",
               "RelativeDocumentMoniker": "CSharp\\CSharp.csproj",
               "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\CSharp.csproj",
               "RelativeToolTip": "CSharp\\CSharp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-05T18:24:55.174Z"
+              "WhenOpened": "2025-10-05T18:24:55.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "Array.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\Array.cs",
               "RelativeDocumentMoniker": "CSharp\\DataStructure\\Array.cs",
               "ToolTip": "C:\\gameprogramming\\CSharp\\CSharp\\DataStructure\\Array.cs",
               "RelativeToolTip": "CSharp\\DataStructure\\Array.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwDYAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv2oAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T18:23:12.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T18:23:12.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "TextRPG.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG.cs",
@@ -91,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Game.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Game.cs",
@@ -103,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "Creature.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Creature.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Creature.cs",
@@ -115,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Entry.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Entry.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Entry.cs",
@@ -127,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "Monster.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Monster.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Monster.cs",
@@ -139,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\gameprogramming\\CSharp\\CSharp\\TextRPG2\\Player.cs",
               "RelativeDocumentMoniker": "CSharp\\TextRPG2\\Player.cs",
