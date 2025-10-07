@@ -4,6 +4,11 @@
     {
         static void Main(string[] args)
         {
+            // Board 설정
+            Board board = new Board();
+            board.Initialize();
+            
+            
             Console.CursorVisible = false; // console창에서 커서 보이게할지 선택
 
             const int WAIT_TICK = 1000 / 30;
@@ -16,6 +21,7 @@
 
             // 메인 무한루프 안에서
             */
+            
             while (true)
             {
                 #region 프레임관리

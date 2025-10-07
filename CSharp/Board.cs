@@ -5,7 +5,7 @@ public class Board
     // 게임 정보를 담을 자료구조는 아래와 같이 여러개가 선정될 수 있음
     // 각각의 자료구조에 대한 특성을 이해하기 상황에 맞게 어떻게 설정해야 할지 선택해야 함
     public int[] _data = new int[25]; // 배열
-    public List<int> _data2 = new List<int>(); // 리스트
+    public MyList<int> _data2 = new MyList<int>(); // 리스트
     public LinkedList<int> _data3 = new LinkedList<int>(); // 연결리스트
     
     /*
@@ -94,9 +94,75 @@ public class Board
      * => Span<T>는 스택 기반이므로 메서드 리턴 불가 -> 리턴이 필요할 땐 Memory<T>를 대신 사용
      */
     
-    
     public void Initialize()
     {
+        _data2.Add(101);
+        _data2.Add(102);
+        _data2.Add(103);
+        _data2.Add(104);
+        _data2.Add(105);
+
+        int temp = _data2[2];
         
+        _data2.RemoveAt(2); // index의 요소 삭제
+    }
+}
+
+public class MyList<T>
+{
+    private const int DEFAULT_SIZE = 1;
+    T[] _data = new T[DEFAULT_SIZE];
+    
+    public int Count = 0; // 실제로 사용중인 데이터 갯수
+    public int Capacity // 예약된 데이터 갯수
+    {
+        get { return _data.Length; }
+    }
+
+    
+    // O(1) 시간복잡도 예외케이스
+    // 아래에 for문이 N개 입력에 대하여 선형증가하기 때문에 O(N)으로 보이지만,
+    // 애초에 if (Count >= Capacity) 조건에서만 실행되기 때문에 => O(1)로 봄
+    public void Add(T item)
+    {
+        // 1. 먼저 공간이 충분히 남아있는지 확인
+        if (Count >= Capacity)
+        {
+            // 공간 부족상태 => 공간 확보해야함
+            T[] newArr = new T[Capacity * 2];
+            for (int i = 0; i < Count; i++)
+            {
+                newArr[i] = _data[i]; // 그대로 마이그레이션
+            }
+            _data = newArr;
+        }
+        // 2. 공간이 확보되면 공간에 데이터를 넣어줌
+        _data[Count] = item;
+        Count++;
+    }
+
+    
+    // class를 배열처럼 사용할 수 있게해주는 indexer임
+    // 즉, `[]` 연산자를 class안에 직접 정의한 것임
+    // 이렇게 하면 클래스에 대한 객체를 배열처럼 "myList[0]" 이런식으로 접근할 수 있게 해줌
+    // 아래에서는 MyList<int> myList = new MyList<int>(); 이렇게 선언된 경우
+    // myList[0] 이렇게 접근하면 자동으로 객체 안의 _data 배열의 0번째 인덱스에 접근할 수 있다는 거임
+    public T this[int index]
+    // O(1) 시간복잡도
+    {
+        get { return _data[index]; }
+        set { _data[index] = value; }
+    }
+    
+    // O(N) 시간복잡도
+    public void RemoveAt(int index)
+    {
+        for (int i = index; i < Count - 1; i++)
+        {
+            _data[i] = _data[i + 1];
+        }
+
+        _data[Count - 1] = default(T); // Count-1 번째 인덱스의 타입에 맞춰 int type이면 0으로 클래스 타입이면 null로 맞춰서 설정
+        Count--;
     }
 }
