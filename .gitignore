@@ -1,0 +1,111 @@
+﻿/CSharp.sln
+# =========================
+# 기본 .NET 빌드/캐시/로그 무시
+# =========================
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+*.log
+
+# =========================
+# Rider / ReSharper
+# =========================
+.idea/
+*.sln.iml
+*.DotSettings.user
+_ReSharper*/
+*.resharper
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Visual Studio 전용
+# =========================
+.vs/
+*.dbmdl
+*.jfm
+*.pdb
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+*.aps
+*.ncb
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+
+# =========================
+# 사용자/환경별 파일
+# =========================
+*.userprefs
+*.user
+*.swp
+*.bak
+*.tmp
+*.cache
+*.temp
+*.pid
+*.seed
+*.orig
+
+# =========================
+# NuGet / 패키지 관련
+# =========================
+*.nupkg
+*.snupkg
+*.nuspec
+.nuget/
+packages/
+*.dll
+*.exe
+
+# =========================
+# Rider / JetBrains 캐시
+# =========================
+.idea/
+*.sln.iml
+*.dotCover
+
+# =========================
+# 환경파일
+# =========================
+.env
+.env.local
+
+# =========================
+# Test 결과물
+# =========================
+TestResult*/
+TestResults/
+*.coverage
+*.coveragexml
+
+# =========================
+# OS 특유 파일
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# =========================
+# Rider temp files
+# =========================
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries
+.idea/**/shelf/
+.idea/**/contentModel.xml
