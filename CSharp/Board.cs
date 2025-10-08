@@ -6,7 +6,7 @@ public class Board
     // 각각의 자료구조에 대한 특성을 이해하기 상황에 맞게 어떻게 설정해야 할지 선택해야 함
     public int[] _data = new int[25]; // 배열
     public MyList<int> _data2 = new MyList<int>(); // 리스트
-    public LinkedList<int> _data3 = new LinkedList<int>(); // 연결리스트
+    public MyLinkedList<int> _data3 = new MyLinkedList<int>(); // 연결리스트
     
     /*
      * 선형 자료구조 vs 비선형 자료구조
@@ -105,6 +105,76 @@ public class Board
         int temp = _data2[2];
         
         _data2.RemoveAt(2); // index의 요소 삭제
+        
+        
+        _data3.AddLast(101);
+        _data3.AddLast(102);
+        MyLinkedListNode<int> node = _data3.AddLast(103);
+        _data3.AddLast(104);
+        _data3.AddLast(105);
+
+        _data3.Remove(node);
+    }
+}
+
+public class MyLinkedListNode<T>
+{
+    public T Data;
+    public MyLinkedListNode<T> Next; // 다음 노드 주소
+    public MyLinkedListNode<T> Prev; // 이전 노드 주소
+}
+
+
+public class MyLinkedList<T>
+{
+    public int Count = 0;
+    public MyLinkedListNode<T> Head = null; // 첫번째 노드
+    public MyLinkedListNode<T> Tail = null; // 마지막 노드
+
+    public MyLinkedListNode<T> AddLast(T data)
+    {
+        
+        // 시간복잡도 : O(1)
+        MyLinkedListNode<T> newRoom = new MyLinkedListNode<T>();
+        newRoom.Data = data;
+        
+        // 기존에 만약 아무런 Room이 없었을 경우에는 그 Room을 Head로 설정
+        if (Head == null)
+        {
+            Head = newRoom;
+        }
+        
+        // 만약 기존에 데이터가 있는 경우, 그 마지막 노드의 다음값을 새로운 노드로 설정하고, 새로운 노드의 이전값을 기존 마지막 노드로 설정한다
+        if (Tail != null)
+        {
+            Tail.Next = newRoom;
+            newRoom.Prev = Tail;
+        }
+        
+        // 새롭게 추가되는 노드를 마지막 노드로 설정한 후, 갯수 증가하고 반환
+        Tail = newRoom;
+        Count++;
+        return newRoom;
+    }
+    
+    // 시간복잡도 : O(1)
+    public void Remove(MyLinkedListNode<T> room)
+    {
+        // 만약 제거 대상이 맨 앞 노드라면 다음 데이터를 Head로 하면 됨 (만약 다음 노드가 없더라도 자동적으로 null을 이어주기 때문에 문제x)
+        if (Head == room)
+            Head = Head.Next;
+        
+        // 맨 마지막 노드를 삭제하는 경우, 마지막 이전 노드를 마지막 노드로 이어주기만 하면됨
+        if (room == Tail)
+            Tail = Tail.Prev;
+
+        if (room.Prev != null)
+            room.Prev.Next = room.Next;
+
+        if (room.Next != null)
+            room.Next.Prev = room.Prev;
+
+        Count--;
     }
 }
 
