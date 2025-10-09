@@ -166,11 +166,11 @@ public class Board
                 // player 좌표를 가져와서 그 좌표랑 현재 y, x가 일치하면 player 전용 색상으로 표시
                 if (y == _player.PosY && x == _player.PosX)
                 {
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
                 }
                 else if (y == DestY && x == DestX)
                 {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                 }
                 else
                 {
@@ -189,11 +189,11 @@ public class Board
         switch (type)
         {
             case TileType.Empty:
-                return ConsoleColor.Green;
+                return ConsoleColor.DarkGreen;
             case TileType.Wall:
-                return ConsoleColor.Red;
+                return ConsoleColor.DarkRed;
             default:
-                return ConsoleColor.Green;
+                return ConsoleColor.DarkGreen;
         }
     }
 }
