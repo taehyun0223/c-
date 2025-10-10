@@ -44,6 +44,17 @@ public class Graph
         new List<int>() { 4 },
     };
     
+    // weighted graph
+    int[,] adj5 = new int[6, 6]
+    {
+        { -1, 15, -1, 35, -1, -1 },
+        { 15, -1, 5, 10, -1, -1 },
+        { -1, 5, -1, -1, -1, -1 },
+        { 35, 10, -1, -1, 5, -1 },
+        { -1, -1, -1, 5, -1, 5 },
+        { -1, -1, -1, -1, 5, -1 },
+    };
+    
     // DFS
 
     public void PrintList()
@@ -136,6 +147,85 @@ public class Graph
                 found[next] = true;
                 parent[next] = now;
                 distance[next] = distance[now] + 1;
+            }
+        }
+    }
+    
+    // Dijkstra
+
+    public void Dijkstra(int start)
+    {
+        bool[] visited = new bool[6]; // 실제 각 vertex를 방문했는지 기록
+        int[] distance = new int[6]; // 각 vertex까지의 거리(가중치)
+        int[] parent = new int[6];
+        Array.Fill(distance, Int32.MaxValue); // 모든 거리를 0으로 초기화하면 안됨 => 초기지점이 0임
+
+        distance[start] = 0; // 시작지점
+        parent[start] = start;
+
+        while (true)
+        {
+            // 가장 가까이에 있는 vertex 찾기
+            
+            //초기값
+            int closest = Int32.MaxValue;
+            int now = -1;
+            
+            // 모든 vertex를 순회하면서
+            for (int i = 0; i < 6; i++)
+            {
+                // 이미 방문한 vertex는 skip
+                if (visited[i])
+                {
+                    continue;
+                }
+                
+                // 아직 발견된적 없거나 기존 후보보다 멀리 있으면 skip
+                if (distance[i] == Int32.MaxValue || distance[i] >= closest)
+                {
+                    continue;
+                }
+                
+                // 위 두개에서 방문하지 않았고 발견된적 있으면서 동시에 기존 후보보다 작은경우
+                // 새롭게 후보로 선정하여 정보 갱신
+                closest = distance[i];
+                now = i;
+            }
+            
+            // 다음 후보가 하나도 없는 경우
+            if (now == -1)
+            {
+                break;
+            }
+            
+            // 제일 좋은 후보를 찾았으니 방문 시도
+            visited[now] = true;
+            
+            // 방문한 vertex와 인접한 vertex들을 조사
+            // -> 상황에 따라 발견한 최단거리를 갱신
+            for (int next = 0; next < 6; next++)
+            {
+                // 연결되지 않았으면 스킵
+                if (adj5[now, next] == -1)
+                {
+                    continue;
+                }
+                
+                // 이미 방문한 vertex는 스킵
+                if (visited[next])
+                {
+                    continue;
+                }
+                
+                // 한번도 방문x 연결된 vertex의 최단 거리 갱신
+                int nextDist = distance[now] + adj5[now, next];
+                
+                // 만약 기존에 발견된 최단거리가 새로 조사된 최단거리보다 크면 => 새롭게 발견된 루트가 더 최단거리면 정보 갱신
+                if (nextDist < distance[next])
+                {
+                    distance[next] = nextDist;
+                    parent[next] = now;
+                }
             }
         }
     }
