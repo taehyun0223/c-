@@ -233,11 +233,11 @@ public class Graph
 
 public class Program
 {
-    
+
     static void Main(string[] args)
     {
         Stack<int> stack = new Stack<int>();
-        
+
         stack.Push(101);
         stack.Push(102);
         stack.Push(103);
@@ -248,7 +248,7 @@ public class Program
         int data2 = stack.Peek(); // 마지막 요소 꺼내진 않고 확인만
 
         Queue<int> queue = new Queue<int>();
-        
+
         queue.Enqueue(101);
         queue.Enqueue(102);
         queue.Enqueue(103);
@@ -257,32 +257,155 @@ public class Program
 
         int data3 = queue.Dequeue(); // 맨 앞 요소 꺼내기 (맨 처음 들어간 요소)
         int data4 = queue.Peek();
-        
-        
+
+
         // DFS
-        
+
         Graph graph = new Graph();
         //Console.WriteLine("일반 2차원 배열 사용");
         //graph.DFS(3);
-        
+
         // Console.WriteLine("List 사용");
         // graph.DFS2(3);
 
         Console.WriteLine("모든 vertex 방문하는 DFS");
         graph.SearchAll();
-        
-        
+
+
         // BFS
-        
+
         graph.BFS(0);
+
+        // Dijkstra
+        graph.Dijkstra(0);
+
+
+        //Tree
+        TreeNode<string> root = MakeTree();
+
+        /*
+        TreeNode<string> root = new TreeNode<string>() { Data = "개발팀" };
+        {
+            {
+                TreeNode<string> node = new TreeNode<string>() { Data = "디자인팀" };
+                node.Children.Add(new TreeNode<string>() { Data = "전투" });
+                node.Children.Add(new TreeNode<string>() { Data = "스토리" });
+                node.Children.Add(new TreeNode<string>() { Data = "경제" });
+                root.Children.Add(node);
+            }
+            {
+                TreeNode<string> node = new TreeNode<string>() { Data = "프로그래밍팀" };
+                node.Children.Add(new TreeNode<string>() { Data = "서버" });
+                node.Children.Add(new TreeNode<string>() { Data = "클라" });
+                node.Children.Add(new TreeNode<string>() { Data = "엔진" });
+                root.Children.Add(node);
+
+            }
+            {
+                TreeNode<string> node = new TreeNode<string>() { Data = "아트팀" };
+                node.Children.Add(new TreeNode<string>() { Data = "배경" });
+                node.Children.Add(new TreeNode<string>() { Data = "캐릭터" });
+                root.Children.Add(node);
+            }
+        }
+        */
         
+        PrintTree(root);
     }
-    
+
+    static TreeNode<string> MakeTree()
+    {
+        TreeNode<string> root = new TreeNode<string>() { Data = "개발팀" };
+        {
+            {
+                TreeNode<string> node = new TreeNode<string>() { Data = "디자인팀" };
+                node.Children.Add(new TreeNode<string>() { Data = "전투" });
+                node.Children.Add(new TreeNode<string>() { Data = "스토리" });
+                node.Children.Add(new TreeNode<string>() { Data = "경제" });
+                root.Children.Add(node);
+            }
+            {
+                TreeNode<string> node = new TreeNode<string>() { Data = "프로그래밍팀" };
+                node.Children.Add(new TreeNode<string>() { Data = "서버" });
+                node.Children.Add(new TreeNode<string>() { Data = "클라" });
+                node.Children.Add(new TreeNode<string>() { Data = "엔진" });
+                root.Children.Add(node);
+
+            }
+            {
+                TreeNode<string> node = new TreeNode<string>() { Data = "아트팀" };
+                node.Children.Add(new TreeNode<string>() { Data = "배경" });
+                node.Children.Add(new TreeNode<string>() { Data = "캐릭터" });
+                root.Children.Add(node);
+            }
+        }
+        return root;
+    }
+
+    static void PrintTree(TreeNode<string> root)
+    {
+        Console.WriteLine(root.Data);
+
+        foreach (TreeNode<string> child in root.Children)
+        {
+            PrintTree(child);
+        }
+    }
+
+    static int GetHeight(TreeNode<string> root)
+    {
+        int height = 0;
+        
+        // 자식들 높이중 가장 높은 높이를 채택해야함 => 전체 트리 depth
+        foreach (TreeNode<string> child in root.Children)
+        {
+            int newHeight = GetHeight(child) + 1;
+            if (height < newHeight)
+            {
+                height = newHeight;
+            }
+            // height = Math.Max(height, newHeight);
+        }
+        
+        return height;
+        
+        /*
+         * 순서
+         * GetHeight(root) 실행
+         * -> int height = 0;
+         * -> foreach문 첫번째 child : int newHeight = GetHeight(child) + 1; => 여기서는 child가 디자인팀 노드
+         * 
+         * --> GetHeight(디자인팀) 실행
+         * --> int height = 0;
+         * --> foreach문 첫번째 child : int newHeight = GetHeight(child) + 1; => 여기서는 전투팀 노드
+         *
+         * ---> GetHeight(전투팀) 실행
+         * ---> int height = 0;
+         * ---> foreach문 돌거 없음 => 자식 노드가 없음
+         * ---> return height
+         * ---> 0 반환
+         *
+         * --> int newHeight = 0 + 1;
+         * --> height < newHeight 이므로 (0<1) height = 1이됨
+         * --> 다음 반복
+         * --> foreach문 두번째 child : int newHeight = GetHeight(child) + 1; => 여기서는 스토리팀 노드
+         * --> 전투팀과 동일한 동작
+         * --> 세번째 child까지 전부 동일한 동작
+         * --> GetHeight(디자인팀)의 return으로 1 반환
+         *
+         * -> int newHeight = GetHeight(디자인팀) + 1 = 1+1 = 2;
+         * -> height < newHeight 이므로 (1<2) height의 값은 2가됨
+         * -> foreach문 두번째 세번째인 프로그래밍팀, 아트팀을 돌아도 전부 동일구조
+         *
+         * -> 결국 GetHeight(root)의 값은 2
+         */
+    }
+
     /*
      * 그래프 간략 설명
      *
      * 현실 사물이나 추상 개념간의 "연결 관계"를 표현할 때 사용
      * vertex와 edge로 구성됨
-     * 
+     *
      */
 }
