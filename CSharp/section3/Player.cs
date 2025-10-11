@@ -41,10 +41,136 @@ public class Player
         // RightHand();
         
         // BFS
-        BFS();
-
+        /*BFS();*/
+        
+        // Astar algo
+        AStar();
     }
 
+    struct PQNode : IComparable<PQNode>
+    {
+        public int F;
+        public int G;
+        public int Y;
+        public int X;
+
+        public int CompareTo(PQNode other)
+        {
+            if (F == other.F)
+            {
+                return 0;
+            }
+
+            return F < other.F ? 1 : -1;
+        }
+    }
+
+    public void AStar()
+    {
+        // 점수 매기기
+        // F = G + H
+        // F : 최종 점수 (작을수록 좋음, 경로에 따라 달라짐)
+        // G : 시작점에서 해당 좌표까지 이동하는데 드는 비용 (작을수록 좋음, 경로에 따라 달라짐)
+        // H : 목적지에서 얼마나 가까운지 (작을수록 좋음, 고정적임 => 중간에 장애물 고려하지 않고 출발점에서 도착점까지의 거리)
+        
+        // U L D R UL DL DR UR
+        // 대각선 이동 가능 버전
+        /*int[] deltaY = new int[] { -1, 0, 1, 0, -1, 1, 1, -1};
+        int[] deltaX = new int[] { 0, -1, 0, 1, -1, -1, 1, 1 };
+        int[] cost = new int[] { 10, 10, 10, 10, 14, 14, 14, 14};*/
+        int[] deltaY = new int[] { -1, 0, 1, 0};
+        int[] deltaX = new int[] { 0, -1, 0, 1};
+        int[] cost = new int[] { 10, 10, 10, 10};
+        
+        // (y,x) 지점에 방문했는지 여부를 체크 ( = closed)
+        bool[,] closed = new bool[_board.Size, _board.Size];
+        
+        // (y,x) 가는 길을 발견한적 있는지 체크
+        // 발견하지 못했다면 => MaxValue
+        // 발견했다면 => F = G + H
+        int[,] open = new int[_board.Size, _board.Size];
+        for (int y = 0; y < _board.Size; y++)
+        {
+            for (int x = 0; x < _board.Size; x++)
+            {
+                open[y,x] = Int32.MaxValue;
+            }
+        }
+        
+        // parent 추적을 통해 어떤 길을 갔는지 추적
+        Pos[,] parent = new Pos[_board.Size, _board.Size];
+        
+        // open list에 있는 정보들중(닫혀있지 않은 갈수있는 노드들 중) 가장 좋은 후보들을 바로 뽑기 위한 큐 => 총합값인 F가 가장 작은 노드를 즉시 뽑아오기 위함
+        PriorityQueue<PQNode> pq = new PriorityQueue<PQNode>();
+        
+        // 시작점 발견 => 예약 진행
+        // 시작점인 (PosY, PosX)의 F값을 계산해서 open[PosY, PosX]에 저장 : 이때 시작점이므로 G값은 0이기 때문에
+        // F = G + H = 0 + H = H 이므로
+        // 순수 H값, 즉 시작점에서 도착점까지의 예상 거리와 같음 => 휴리스틱 방법을 사용 (맨허튼 거리 함수) : |p1 - q1| + |p2 - q2|
+        open[PosY, PosX] = 10 * (Math.Abs(_board.DestY - PosY) + Math.Abs(_board.DestX - PosX)); 
+        
+        // 시작점(PosY, PosX)의 정보를 Priority queue에 PQNode 구조체 정보의 형태로 넣음
+        pq.Push(new PQNode(){F= 10 * (Math.Abs(_board.DestY - PosY) + Math.Abs(_board.DestX - PosX)), G=0, Y = PosY, X = PosX});
+        parent[PosY, PosX] = new Pos(PosY, PosX);
+        
+        // 남은 노드가 있는 동안 반복
+        while (pq.Count > 0)
+        {
+            // 가장 좋은 후보를 찾기
+            
+            // 먼저 최우선순위 후보를 하나 꺼냄
+            PQNode node = pq.Pop();
+            
+            // 동일한 좌표를 여러 경로로 찾아서, 더 빠른 경로로 인해 이미 방문된(closed) 경우에는 스킵
+            if (closed[node.Y, node.X])
+            {
+                continue;
+            }
+            
+            // 방문되지 않은 노드의 경우 먼저 방문기록
+            closed[node.Y, node.X] = true;
+            
+            // 만약 목적지인 경우에는 스탑하고 종료
+            if (node.Y == _board.DestY && node.X == _board.DestX)
+            {
+                break;
+            }
+            
+            // 상하좌우 등 모든 이동할 수 있는 좌표를 확인해서 예약함 => open에 추가
+            for (int i = 0; i < deltaY.Length; i++)
+            {
+                int nextY = node.Y + deltaY[i];
+                int nextX = node.X + deltaX[i];
+                
+                // 유효범위 아니면 스킵
+                if (nextX < 0 || nextX >= _board.Size || nextY < 0 || nextY >= _board.Size)
+                    continue;       
+                // 벽이면 스킵 => 벽으로 막혀있음
+                if (_board.Tile[nextY, nextX] == Board.TileType.Wall)
+                    continue;
+                // 방문했으면 스킵
+                if (closed[nextY, nextX])
+                    continue;
+                
+                // 비용 계산
+                int g = node.G + cost[i];
+                int h = 10 * (Math.Abs(_board.DestY - nextY) + Math.Abs(_board.DestX - nextX));
+                
+                // 만약 다른 경로에서 해당 좌표에 대해 더 빠른 길을 찾았다면 스킵
+                if (open[nextY, nextX] < g + h)
+                {
+                    continue;
+                }
+                
+                // 여기까지 진행됐으면 가장 좋은 케이스임 => open에 예약 진행
+                open[nextY, nextX] = g + h;
+                pq.Push(new PQNode(){F = g + h, G = g, Y = nextY, X = nextX});
+                parent[nextY, nextX] = new Pos(node.Y, node.X);
+            }
+        }
+        CalcPathFromParent(parent);
+    }
+    
     public void BFS()
     {
         int[] deltaY = new int[] { -1, 0, 1, 0 };
@@ -81,7 +207,12 @@ public class Player
                 parent[nextY, nextX] = new Pos(nowY, nowX);
             }
         }
-        
+
+        CalcPathFromParent(parent);
+    }
+
+    void CalcPathFromParent(Pos[,] parent)
+    {
         // 이제 BFS를 완료했으니 완료지점에서부터 parent[]를 통해 거꾸로 타고 올라가면서 경로를 확인함
         int y = _board.DestY; // 목적지 y좌표
         int x = _board.DestX; // 목적지 x좌표
@@ -147,14 +278,18 @@ public class Player
     }
 
 
-    const int MOVE_TICK = 1;
+    const int MOVE_TICK = 100;
     int _sumTick = 0;
     int _lastIndex = 0;
     public void Update(int deltaTick)
     {
         if (_lastIndex >= _points.Count)
         {
-            return;
+            _lastIndex = 0;
+            _points.Clear();
+            _board.Initialize(_board.Size, this);
+            Initialize(1,1,_board);
+            // return; ==> 끝나면 멈추고 종료하도록
         }
         
         _sumTick += deltaTick;
