@@ -311,6 +311,49 @@ public class Program
         */
         
         PrintTree(root);
+        
+        
+        
+        // Priority Queue
+        PriorityQueue<int> q = new PriorityQueue<int>();
+        q.Push(20);
+        q.Push(10);
+        q.Push(30);
+        q.Push(90);
+        q.Push(40);
+
+        while (q.Count() > 0)
+        {
+            Console.WriteLine(q.Pop());
+        }
+        
+        PriorityQueue<Knight> q2 = new PriorityQueue<Knight>();
+        q2.Push(new Knight() { id = 20 });
+        q2.Push(new Knight() { id = 30 });
+        q2.Push(new Knight() { id = 40 });
+        q2.Push(new Knight() { id = 10 });
+        q2.Push(new Knight() { id = 5 });
+        
+        while (q2.Count() > 0)
+        {
+            Console.WriteLine(q2.Pop().id);
+        }
+    }
+    
+    // 해당 클래스 객체를 비교할 수 있다는 인터페이스를 구현해야함
+    // 기본적으로 모든 클래스는 비교할 수 있는 메소드를 지원하지 않음
+    public class Knight : IComparable<Knight>
+    {
+        public int id { get; set; }
+        public int CompareTo(Knight? other)
+        {
+            if (id == other.id)
+            {
+                return 0;
+            }
+
+            return id > other.id ? 1 : -1;
+        }
     }
 
     static TreeNode<string> MakeTree()
